@@ -672,7 +672,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		else
 			MainWindow.ClipsDescendants = true
 			WindowTopBarLine.Visible = false
-			MinimizeBtn.Ico.Image = "rbxassetid://7072720870"
+			MinimizeBtn.Ico.Image = "rbxassetid://18502387426"
 
 			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, WindowName.TextBounds.X + 140, 0, 50)}):Play()
 			wait(0.1)
@@ -856,7 +856,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				ButtonConfig = ButtonConfig or {}
 				ButtonConfig.Name = ButtonConfig.Name or "Button"
 				ButtonConfig.Callback = ButtonConfig.Callback or function() end
-				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://3944703587"
+				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://18502387426"
 
 				local Button = {}
 
@@ -932,7 +932,7 @@ function OrionLib:MakeWindow(WindowConfig)
 						Name = "Stroke",
 						Transparency = 0.5
 					}),
-					SetProps(MakeElement("Image", "rbxassetid://3944680095"), {
+					SetProps(MakeElement("Image", "rbxassetid://18502387426"), {
 						Size = UDim2.new(0, 20, 0, 20),
 						AnchorPoint = Vector2.new(0.5, 0.5),
 						Position = UDim2.new(0.5, 0, 0.5, 0),
