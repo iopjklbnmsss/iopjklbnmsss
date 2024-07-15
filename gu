@@ -674,7 +674,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			WindowTopBarLine.Visible = false
 			MinimizeBtn.Ico.Image = "rbxassetid://18505827412"
 
-			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, WindowName.TextBounds.X + 140, 0, 50)}):Play()
+			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(8, WindowName.TextBounds.X + 140, 0, 50)}):Play()
 			wait(0.1)
 			WindowStuff.Visible = false	
 		end
