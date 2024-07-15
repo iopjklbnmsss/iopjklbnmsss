@@ -489,7 +489,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Position = UDim2.new(0.5, 0, 0, 0),
 		BackgroundTransparency = 1
 	}), {
-		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18505916506"), {
+		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18505827412"), {
 			Position = UDim2.new(0, 9, 0, 6),
 			Size = UDim2.new(0, 28, 0, 28)
 		}), "Text")
@@ -501,7 +501,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	}), {
 		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18505827412"), {
 			Position = UDim2.new(0, 9, 0, 6),
-			Size = UDim2.new(0, 30, 0, 30),
+			Size = UDim2.new(0, 28, 0, 28),
 			Name = "Ico"
 		}), "Text")
 	})
@@ -549,7 +549,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			}), "Divider"),
 			SetChildren(SetProps(MakeElement("TFrame"), {
 				AnchorPoint = Vector2.new(0, 0.5),
-				Size = UDim2.new(0, 25, 0, 25),
+				Size = UDim2.new(0, 32, 0, 32),
 				Position = UDim2.new(0, 10, 0.5, 0)
 			}), {
 				AddThemeObject(MakeElement("Stroke"), "Stroke"),
@@ -629,10 +629,10 @@ function OrionLib:MakeWindow(WindowConfig)
 		BackgroundColor3 = OrionLib.Themes[OrionLib.SelectedTheme].Main,
 		Visible = false
 	}), {
-		AddThemeObject(SetProps(MakeElement("Image", WindowConfig.IntroToggleIcon or "rbxassetid://18505894907"), {
+		AddThemeObject(SetProps(MakeElement("Image", WindowConfig.IntroToggleIcon or "http://www.roblox.com/asset/?id=8834748103"), {
 			AnchorPoint = Vector2.new(0.5, 0.5),
 			Position = UDim2.new(0.5, 0, 0.5, 0),
-			Size = UDim2.new(1, 0, 1, 0),
+			Size = UDim2.new(0.7, 0, 0.7, 0),
 		}), "Text"),
 		MakeElement("Corner", 1)
 	})
@@ -642,8 +642,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MobileReopenButton.Visible = true
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "SansHub",
-			Content = "暂时隐藏完全关闭在服务器里",
+			Name = "Interface Hidden",
+			Content = "Tap Left Control to reopen the interface",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
@@ -664,7 +664,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(MinimizeBtn.MouseButton1Up, function()
 		if Minimized then
 			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, 615, 0, 344)}):Play()
-			MinimizeBtn.Ico.Image = "rbxassetid://18505827412"
+			MinimizeBtn.Ico.Image = "rbxassetid://18505894907"
 			wait(.02)
 			MainWindow.ClipsDescendants = false
 			WindowStuff.Visible = true
@@ -672,9 +672,9 @@ function OrionLib:MakeWindow(WindowConfig)
 		else
 			MainWindow.ClipsDescendants = true
 			WindowTopBarLine.Visible = false
-			MinimizeBtn.Ico.Image = "rbxassetid://18505827412"
+			MinimizeBtn.Ico.Image = "rbxassetid://18505894907"
 
-			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(8, WindowName.TextBounds.X + 140, 0, 50)}):Play()
+			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, WindowName.TextBounds.X + 140, 0, 50)}):Play()
 			wait(0.1)
 			WindowStuff.Visible = false	
 		end
@@ -687,7 +687,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			Parent = Orion,
 			AnchorPoint = Vector2.new(0.5, 0.5),
 			Position = UDim2.new(0.5, 0, 0.4, 0),
-			Size = UDim2.new(0, 58, 0, 58),
+			Size = UDim2.new(0, 38, 0, 38),
 			ImageColor3 = Color3.fromRGB(255, 255, 255),
 			ImageTransparency = 1
 		})
@@ -731,7 +731,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		}), {
 			AddThemeObject(SetProps(MakeElement("Image", TabConfig.Icon), {
 				AnchorPoint = Vector2.new(0, 0.5),
-				Size = UDim2.new(0, 30, 0, 30),
+				Size = UDim2.new(0, 18, 0, 18),
 				Position = UDim2.new(0, 10, 0.5, 0),
 				ImageTransparency = 0.4,
 				Name = "Ico"
@@ -856,7 +856,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				ButtonConfig = ButtonConfig or {}
 				ButtonConfig.Name = ButtonConfig.Name or "Button"
 				ButtonConfig.Callback = ButtonConfig.Callback or function() end
-				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://18505894907"
+				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://3944703587"
 
 				local Button = {}
 
@@ -932,7 +932,7 @@ function OrionLib:MakeWindow(WindowConfig)
 						Name = "Stroke",
 						Transparency = 0.5
 					}),
-					SetProps(MakeElement("Image", "rbxassetid://18505894907"), {
+					SetProps(MakeElement("Image", "rbxassetid://3944680095"), {
 						Size = UDim2.new(0, 20, 0, 20),
 						AnchorPoint = Vector2.new(0.5, 0.5),
 						Position = UDim2.new(0.5, 0, 0.5, 0),
@@ -942,7 +942,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				})
 
 				local ToggleFrame = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 5), {
-					Size = UDim2.new(1, 0, 0, 5),
+					Size = UDim2.new(1, 0, 0, 38),
 					Parent = ItemParent
 				}), {
 					AddThemeObject(SetProps(MakeElement("Label", ToggleConfig.Name, 15), {
