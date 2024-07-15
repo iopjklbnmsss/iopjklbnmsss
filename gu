@@ -489,7 +489,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		Position = UDim2.new(0.5, 0, 0, 0),
 		BackgroundTransparency = 1
 	}), {
-		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18505827412"), {
+		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://7072725342"), {
 			Position = UDim2.new(0, 9, 0, 6),
 			Size = UDim2.new(0, 28, 0, 28)
 		}), "Text")
@@ -501,7 +501,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	}), {
 		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18505827412"), {
 			Position = UDim2.new(0, 9, 0, 6),
-			Size = UDim2.new(0, 28, 0, 28),
+			Size = UDim2.new(0, 18, 0, 18),
 			Name = "Ico"
 		}), "Text")
 	})
@@ -664,7 +664,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(MinimizeBtn.MouseButton1Up, function()
 		if Minimized then
 			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, 615, 0, 344)}):Play()
-			MinimizeBtn.Ico.Image = "rbxassetid://18505894907"
+			MinimizeBtn.Ico.Image = "rbxassetid://18505827412"
 			wait(.02)
 			MainWindow.ClipsDescendants = false
 			WindowStuff.Visible = true
@@ -672,7 +672,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		else
 			MainWindow.ClipsDescendants = true
 			WindowTopBarLine.Visible = false
-			MinimizeBtn.Ico.Image = "rbxassetid://18505894907"
+			MinimizeBtn.Ico.Image = "rbxassetid://18505827412"
 
 			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, WindowName.TextBounds.X + 140, 0, 50)}):Play()
 			wait(0.1)
@@ -687,7 +687,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			Parent = Orion,
 			AnchorPoint = Vector2.new(0.5, 0.5),
 			Position = UDim2.new(0.5, 0, 0.4, 0),
-			Size = UDim2.new(0, 38, 0, 38),
+			Size = UDim2.new(0, 28, 0, 28),
 			ImageColor3 = Color3.fromRGB(255, 255, 255),
 			ImageTransparency = 1
 		})
@@ -856,7 +856,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				ButtonConfig = ButtonConfig or {}
 				ButtonConfig.Name = ButtonConfig.Name or "Button"
 				ButtonConfig.Callback = ButtonConfig.Callback or function() end
-				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://3944703587"
+				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://18505827412"
 
 				local Button = {}
 
