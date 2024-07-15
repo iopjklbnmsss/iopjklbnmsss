@@ -491,7 +491,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	}), {
 		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18505429203"), {
 			Position = UDim2.new(0, 9, 0, 6),
-			Size = UDim2.new(0, 18, 0, 18)
+			Size = UDim2.new(0, 28, 0, 28)
 		}), "Text")
 	})
 
@@ -501,7 +501,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	}), {
 		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18502384527"), {
 			Position = UDim2.new(0, 9, 0, 6),
-			Size = UDim2.new(0, 18, 0, 18),
+			Size = UDim2.new(0, 28, 0, 28),
 			Name = "Ico"
 		}), "Text")
 	})
@@ -731,7 +731,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		}), {
 			AddThemeObject(SetProps(MakeElement("Image", TabConfig.Icon), {
 				AnchorPoint = Vector2.new(0, 0.5),
-				Size = UDim2.new(0, 38, 0, 38),
+				Size = UDim2.new(0, 30, 0, 30),
 				Position = UDim2.new(0, 10, 0.5, 0),
 				ImageTransparency = 0.4,
 				Name = "Ico"
