@@ -375,7 +375,7 @@ function OrionLib:MakeNotification(NotificationConfig)
 	spawn(function()
 		NotificationConfig.Name = NotificationConfig.Name or "Notification"
 		NotificationConfig.Content = NotificationConfig.Content or "Test"
-		NotificationConfig.Image = NotificationConfig.Image or "rbxassetid://4384403532"
+		NotificationConfig.Image = NotificationConfig.Image or "rbxassetid://18528715800"
 		NotificationConfig.Time = NotificationConfig.Time or 15
 
 		local NotificationParent = SetProps(MakeElement("TFrame"), {
@@ -543,7 +543,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					Size = UDim2.new(1, 0, 1, 0)
 				}),
 				AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://18505827412"), {
-					Size = UDim2.new(1, 0, 1, 0),
+					Size = UDim2.new(0.8, 0, 0.8, 0),
 				}), "Second"),
 				MakeElement("Corner", 1)
 			}), "Divider"),
@@ -642,8 +642,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MobileReopenButton.Visible = true
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
-			Content = "Tap Left Control to reopen the interface",
+			Name = "SansHub",
+			Content = "Did you touch that child?",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
