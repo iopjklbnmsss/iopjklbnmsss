@@ -1687,7 +1687,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					TextTransparency = 0.4
 				}), "Text"),
 				AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://4483345875"), {
-					Size = UDim2.new(0, 56, 0, 56),
+					Size = UDim2.new(0, 36, 0, 36),
 					Position = UDim2.new(0, 84, 0, 110),
 				}), "Text"),
 				AddThemeObject(SetProps(MakeElement("Label", "Premium Features", 14), {
