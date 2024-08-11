@@ -101,7 +101,7 @@ function nurysium: init(name: string, is_draggable: boolean, parent)
 	local UICorner = Instance.new("UICorner")
 	local UIStroke = Instance.new("UIStroke")
 	local BackgroundShadow = Instance.new("ImageLabel")
-	local Eye = Instance.new("ImageLabel")
+	local owner = Instance.new("ImageLabel")
 	local Background = Instance.new("Frame")
 	local UICorner_2 = Instance.new("UICorner")
 	local Sections = Instance.new("Frame")
@@ -167,17 +167,17 @@ function nurysium: init(name: string, is_draggable: boolean, parent)
 	BackgroundShadow.ScaleType = Enum.ScaleType.Slice
 	BackgroundShadow.SliceCenter = Rect.new(85, 85, 427, 427)
 
-	Eye.Name = "Eye"
-	Eye.Parent = uiVisible
-	Eye.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Eye.BackgroundTransparency = 1.000
-	Eye.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Eye.BorderSizePixel = 0
-	Eye.Position = UDim2.new(0.239999995, 0, 0.239999995, 0)
-	Eye.Size = UDim2.new(0.5, 0, 0.5, 0)
-	Eye.ZIndex = 25
-	Eye.Image = "rbxassetid://17615525476"
-	Eye.ImageTransparency = 0.450
+	owner.Name = "开关"
+	owner.Parent = uiVisible
+	owner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	owner.BackgroundTransparency = 1.000
+	owner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	owner.BorderSizePixel = 0
+	owner.Position = UDim2.new(0.239999995, 0, 0.239999995, 0)
+	owner.Size = UDim2.new(0.5, 0, 0.5, 0)
+	owner.ZIndex = 25
+	owner.Image = "rbxassetid://18900264868"
+	owner.ImageTransparency = 0.450
 
 	ui = Instance.new("ScreenGui", Main)
 
@@ -710,7 +710,7 @@ function nurysium: create_toggle(name: string, section_name: string, callback)
 	checkmark.Position = UDim2.new(0.227271676, 0, 0.200000003, 0)
 	checkmark.Size = UDim2.new(0.545454562, 0, 0.600000024, 0)
 	checkmark.ZIndex = 15
-	checkmark.Image = "rbxassetid://18900264868"
+	checkmark.Image = "rbxassetid://9754130783"
 
 	UIStroke.Parent = Toggle
 	UIStroke.Color = Color3.fromRGB(29, 33, 45)
