@@ -184,35 +184,35 @@ function nurysium: init(name: string, is_draggable: boolean, parent)
 	ui.Name = 'nurysium'
 	ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	
-	local girl_Image = Instance.new("Frame")
-	local girl = Instance.new("ImageLabel")
-	local girl_UIGradient = Instance.new("UIGradient")
-	local girl_UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+	local owner_Image = Instance.new("Frame")
+	local owner = Instance.new("ImageLabel")
+	local owner_UIGradient = Instance.new("UIGradient")
+	local owner_UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
-	girl_Image.Name = "girl_Image"
-	girl_Image.Parent = ui
-	girl_Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	girl_Image.BackgroundTransparency = 1.000
-	girl_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	girl_Image.BorderSizePixel = 0
-	girl_Image.Size = UDim2.new(1, 0, 1, 0)
+	owner_Image.Name = "作者图"
+	owner_Image.Parent = ui
+	owner_Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	owner_Image.BackgroundTransparency = 1.000
+	owner_Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	owner_Image.BorderSizePixel = 0
+	owner_Image.Size = UDim2.new(1, 0, 1, 0)
 
-	girl.Name = "girl"
-	girl.Parent = girl_Image
-	girl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	girl.BackgroundTransparency = 1.000
-	girl.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	girl.BorderSizePixel = 0
-	girl.Position = UDim2.new(0.730189502, 0, 0.475565195, 0)
-	girl.Size = UDim2.new(0.269810468, 0, 0.524434745, 0)
-	girl.Image = "rbxassetid://17663188480"
+	owner.Name = "作者"
+	owner.Parent = owner_Image
+	owner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	owner.BackgroundTransparency = 1.000
+	owner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	owner.BorderSizePixel = 0
+	owner.Position = UDim2.new(0.730189502, 0, 0.475565195, 0)
+	owner.Size = UDim2.new(0.269810468, 0, 0.524434745, 0)
+	owner.Image = "rbxassetid://18900264868"
 
-	girl_UIGradient.Rotation = -74
-	girl_UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.17, 0.80), NumberSequenceKeypoint.new(0.34, 0.47), NumberSequenceKeypoint.new(0.43, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.68, 0.00), NumberSequenceKeypoint.new(0.90, 0.97), NumberSequenceKeypoint.new(1.00, 1.00)}
-	girl_UIGradient.Parent = girl
+	owner_UIGradient.Rotation = -74
+	owner_UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 1.00), NumberSequenceKeypoint.new(0.17, 0.80), NumberSequenceKeypoint.new(0.34, 0.47), NumberSequenceKeypoint.new(0.43, 0.00), NumberSequenceKeypoint.new(0.50, 0.00), NumberSequenceKeypoint.new(0.68, 0.00), NumberSequenceKeypoint.new(0.90, 0.97), NumberSequenceKeypoint.new(1.00, 1.00)}
+	owner_UIGradient.Parent = owner
 	
-	girl_UIAspectRatioConstraint.Parent = girl
-	girl_UIAspectRatioConstraint.AspectRatio = 0.87
+	owner_UIAspectRatioConstraint.Parent = owner
+	owner_UIAspectRatioConstraint.AspectRatio = 0.87
 
 	Background.Name = "Background"
 	Background.Parent = ui
@@ -319,7 +319,7 @@ function nurysium: init(name: string, is_draggable: boolean, parent)
 
 	UICorner_4.CornerRadius = UDim.new(0, 15)
 	UICorner_4.Parent = Search
-
+--搜索图
 	ImageLabel.Parent = Search
 	ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ImageLabel.BackgroundTransparency = 1.000
@@ -395,14 +395,14 @@ function nurysium: init(name: string, is_draggable: boolean, parent)
 	UIStroke_3.Parent = Background
 	UIStroke_3.Color = Color3.fromRGB(85, 85, 85)
 	UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-
+--UI背景
 	BackgroundShadow_2.Name = "BackgroundShadow"
 	BackgroundShadow_2.Parent = Background
 	BackgroundShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
 	BackgroundShadow_2.BackgroundTransparency = 1.000
 	BackgroundShadow_2.Position = UDim2.new(0.499168396, 0, 0.492307693, 2)
 	BackgroundShadow_2.Size = UDim2.new(1.00498962, 142, 1.00923073, 142)
-	BackgroundShadow_2.Image = "rbxassetid://18900264868"
+	BackgroundShadow_2.Image = "rbxassetid://12817494724"
 	BackgroundShadow_2.ImageTransparency = 0.500
 	BackgroundShadow_2.ScaleType = Enum.ScaleType.Slice
 	BackgroundShadow_2.SliceCenter = Rect.new(85, 85, 427, 427)
@@ -699,7 +699,7 @@ function nurysium: create_toggle(name: string, section_name: string, callback)
 
 	UICorner_2.CornerRadius = UDim.new(0, 5)
 	UICorner_2.Parent = Toggle
-
+--按钮图
 	checkmark.Name = "checkmark"
 	checkmark.Parent = Toggle
 	checkmark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -710,7 +710,7 @@ function nurysium: create_toggle(name: string, section_name: string, callback)
 	checkmark.Position = UDim2.new(0.227271676, 0, 0.200000003, 0)
 	checkmark.Size = UDim2.new(0.545454562, 0, 0.600000024, 0)
 	checkmark.ZIndex = 15
-	checkmark.Image = "rbxassetid://9754130783"
+	checkmark.Image = "rbxassetid://18900264868"
 
 	UIStroke.Parent = Toggle
 	UIStroke.Color = Color3.fromRGB(29, 33, 45)
