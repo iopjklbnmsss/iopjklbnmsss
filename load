@@ -59,7 +59,7 @@ local function MakesanshubLoadingScreen(Time)
 	Title.BorderSizePixel = 0
 	Title.Position = UDim2.new(0, 0, 0.022, 0)
 	Title.Size = UDim2.new(1, 0, 0.664, 0)
-	Title.Image = "rbxassetid://18829365715"
+	Title.Image = "rbxassetid://18900264868"
 	Title.ScaleType = Enum.ScaleType.Fit
 
 	LoadingBar.Name = "LoadingBar"
@@ -139,7 +139,7 @@ local function MakesanshubLoadingScreen(Time)
 	whiteServer.Position = UDim2.new(0, 0, 0.822, 0)
 	whiteServer.Size = UDim2.new(1, 0, 0.0694, 0)
 	whiteServer.Font = Enum.Font.GothamBold
-	whiteServer.Text = "QQ群:109643808"
+	whiteServer.Text = "最新消息请看频道"
 	whiteServer.TextColor3 = Color3.new(1, 1, 1)
 	whiteServer.TextScaled = true
 	whiteServer.TextSize = 16.000
