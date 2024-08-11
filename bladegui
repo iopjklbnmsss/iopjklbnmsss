@@ -247,7 +247,7 @@ function nurysium: init(name: string, is_draggable: boolean, parent)
 	real_sections.BorderSizePixel = 0
 	real_sections.Position = UDim2.new(0.249553874, 0, 0.170943886, 0)
 	real_sections.Size = UDim2.new(0, 107, 0, 230)
-	real_sections.ZIndex = 6
+	real_sections.ZIndex = 9
 
 	UIListLayout.Parent = real_sections
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
