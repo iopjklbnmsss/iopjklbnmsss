@@ -668,7 +668,7 @@ function nurysium: create_toggle(name: string, section_name: string, callback)
 	Hitbox.Size = UDim2.new(1, 0, 1, 0)
 	Hitbox.Font = Enum.Font.SourceSans
 	Hitbox.TextColor3 = Color3.fromRGB(0, 0, 0)
-	Hitbox.TextSize = 1.000
+	Hitbox.TextSize = 2.000
 	Hitbox.TextTransparency = 1.000
 
 	Title.Name = "Title"
