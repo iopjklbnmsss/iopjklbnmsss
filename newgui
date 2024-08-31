@@ -124,7 +124,7 @@ local CProvider = game:GetService("ContentProvider")
 local creations = 0
 
 --Window
-local BarIn = "rbxassetid://18900264868"
+local BarIn = "rbxassetid://12002282362"
 --Bar
 local SearchIn = "rbxassetid://12112852615"
 local MenuIn = "rbxassetid://11949054349"
@@ -136,7 +136,7 @@ local MoreIn = "rbxassetid://11949185875"
 --Features
 local TogOn = "rbxassetid://12007342639"
 local TogOff = "rbxassetid://12007348679"
-local PointerIn = "rbxassetid://12080467938"
+local PointerIn = "rbxassetid://18900264868"
 local DropIn = "rbxassetid://12080300828"
 
 CProvider:PreloadAsync({
