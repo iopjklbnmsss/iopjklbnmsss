@@ -119,7 +119,7 @@ function DiscordLib:Window(text)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-	MainFrame.Size = UDim2.new(0, 381, 0, 396)
+	MainFrame.Size = UDim2.new(0, 581, 0, 396)
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
@@ -127,7 +127,7 @@ function DiscordLib:Window(text)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
-	TopFrame.Size = UDim2.new(0, 381, 0, 22)
+	TopFrame.Size = UDim2.new(0, 481, 0, 22)
 	
 	TopFrameHolder.Name = "TopFrameHolder"
 	TopFrameHolder.Parent = TopFrame
@@ -135,7 +135,7 @@ function DiscordLib:Window(text)
 	TopFrameHolder.BackgroundTransparency = 1.000
 	TopFrameHolder.BorderSizePixel = 0
 	TopFrameHolder.Position = UDim2.new(-0.000658480625, 0, 0, 0)
-	TopFrameHolder.Size = UDim2.new(0, 381, 0, 22)
+	TopFrameHolder.Size = UDim2.new(0, 181, 0, 22)
 
 	Title.Name = "Title"
 	Title.Parent = TopFrame
@@ -154,7 +154,7 @@ function DiscordLib:Window(text)
 	CloseBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	CloseBtn.BackgroundTransparency = 0
 	CloseBtn.Position = UDim2.new(0.959063113, 0, -0.0169996787, 0)
-	CloseBtn.Size = UDim2.new(0, 28, 0, 22)
+	CloseBtn.Size = UDim2.new(0, 18, 0, 12)
 	CloseBtn.Font = Enum.Font.Gotham
 	CloseBtn.Text = ""
 	CloseBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -176,7 +176,7 @@ function DiscordLib:Window(text)
 	MinimizeBtn.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
 	MinimizeBtn.BackgroundTransparency = 0
 	MinimizeBtn.Position = UDim2.new(0.917947114, 0, -0.0169996787, 0)
-	MinimizeBtn.Size = UDim2.new(0, 28, 0, 22)
+	MinimizeBtn.Size = UDim2.new(0, 12, 0, 12)
 	MinimizeBtn.Font = Enum.Font.Gotham
 	MinimizeBtn.Text = ""
 	MinimizeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
