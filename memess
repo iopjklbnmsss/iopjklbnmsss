@@ -757,10 +757,10 @@ function redzlib:MakeWindow(Configs)
       Title = "SansHub",
       Text = "你确定要关闭吗?",
       Options = {
-        {"Confirm", function()
+        {"确定", function()
           ScreenGui:Destroy()
         end},
-        {"Cancel"}
+        {"取消"}
       }
     })
   end
