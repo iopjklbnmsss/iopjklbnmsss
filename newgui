@@ -2,6 +2,82 @@ local CoreGui = game:GetService("CoreGui")
 local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 
+local function createNotification(text, duration, color, withButtons, onWrong, onCorrect)
+    local notification = Instance.new("Frame")
+    notification.Name = "Notification"
+    notification.BackgroundColor3 = color or Color3.fromRGB(39, 39, 39)
+    notification.BorderSizePixel = 0
+    notification.Size = UDim2.new(0, 200, 0, 50)
+    notification.Position = UDim2.new(1, -20, 1, -60)
+    notification.ZIndex = 5
+    notification.Parent = ScreenGui
+    Lib:UICorner(notification, 5)
+
+    local textLabel = Instance.new("TextLabel")
+    textLabel.Text = text
+    textLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    textLabel.BackgroundTransparency = 1
+    textLabel.Size = UDim2.new(1, 0, 1, 0)
+    textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+    textLabel.TextSize = 14
+    textLabel.TextXAlignment = "Center"
+    textLabel.Parent = notification
+
+    if withButtons then
+        local buttonContainer = Instance.new("Frame")
+        buttonContainer.Size = UDim2.new(1, 0, 1, 0)
+        buttonContainer.Position = UDim2.new(0, 0, 1, 0)
+        buttonContainer.Parent = notification
+
+        local wrongButton = Instance.new("TextButton")
+        wrongButton.Text = "Wrong"
+        wrongButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        wrongButton.Size = UDim2.new(0.5, 0, 1, 0)
+        wrongButton.Position = UDim2.new(0, 0, 0, 0)
+        wrongButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+        wrongButton.Parent = buttonContainer
+        Lib:UICorner(wrongButton, 5)
+
+        local correctButton = Instance.new("TextButton")
+        correctButton.Text = "Correct"
+        correctButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+        correctButton.Size = UDim2.new(0.5, 0, 1, 0)
+        correctButton.Position = UDim2.new(0.5, 0, 0, 0)
+        correctButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+        correctButton.Parent = buttonContainer
+        Lib:UICorner(correctButton, 5)
+
+        wrongButton.MouseButton1Click:Connect(function()
+            if type(onWrong) == "function" then
+                onWrong()
+            end
+            notification:Destroy()
+        end)
+
+        correctButton.MouseButton1Click:Connect(function()
+            if type(onCorrect) == "function" then
+                onCorrect()
+            end
+            notification:Destroy()
+        end)
+    end
+
+    -- 淡入效果
+    local info = TweenInfo.new(0.3)
+    local goal = {Position = UDim2.new(1, -20, 1, -60)}
+    TweenService:Create(notification, info, goal):Play()
+
+    task.wait(duration)
+    local info = TweenInfo.new(0.3)
+    local goal = {Position = UDim2.new(1, -20, 1, -110)}
+    TweenService:Create(notification, info, goal):Play()
+    task.wait(0.3)
+    notification:Destroy()
+end
+
+
+
+
 local ranstart = os.clock()
 
 local Lib = {}
